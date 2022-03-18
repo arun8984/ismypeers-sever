@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from asterisk.views import home, register_push
+from asterisk.views import home, register_push, send_push, ack_push, check_push
 urlpatterns = [
     path('push/', home, name='home'),
     path('push/register', register_push, name='push_register'),
+    path('push/send', send_push, name='push_send'),
+    path('push/ack', ack_push, name='push_ack'),
+    path('push/check', check_push, name='push_check'),
     path('push/admin/', admin.site.urls),
 ]

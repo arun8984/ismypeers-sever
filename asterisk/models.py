@@ -31,7 +31,7 @@ class PushReg(models.Model):
 class PushAck(models.Model):
     id = models.BigAutoField(primary_key=True, editable=False)
     SIPUsername = models.CharField('Sip Username', max_length=20, blank=False, null=False)
-    Ack = models.BooleanField('Ack',default=False)
+    Ack = models.BooleanField('Ack', default=False)
     CallFrom = models.CharField('Call From', max_length=20, blank=False, null=False)
     CreatedOn = models.DateTimeField('Created On', auto_now_add=True)
     UpdatedOn = models.DateTimeField('Updated On', auto_now=True, null=True)

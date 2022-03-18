@@ -125,3 +125,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FCM_SERVER_KEY='AAAAK5avTys:APA91bED-ppUIF7-B1RnUUfKDmTO0DiFBrqoYxR8pvQ0UM5goaf73YLQLWfmxRs-Ow-r50V8upUrWp3j3G307aX7XtzUO6lWM4e1jQRwsg-LlgPYRazm27T1YF0zUazKeRboMg9Vr8qA'
